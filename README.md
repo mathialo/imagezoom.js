@@ -18,7 +18,7 @@ There are mainly two functions in imagezoom.js that are of intrest to the end us
  - `applyToImage(htmlDOM)` makes the given image clickable. It takes the DOM element of the image you want clickable as an argument
  - `applyToAllImgTags()` applies imagezoom to all images on the webpage.
 
-All functions in imagezoom.js is prefixed with the namespace `imgzm`. 
+All functions in imagezoom.js are prefixed with the namespace `imgzm`. 
 
 
 ## Example
