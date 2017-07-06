@@ -13,7 +13,7 @@ var imgzm = {
 		imgzm.imageDiv.style.visibility = "visible";
 
 		var newImage = image.cloneNode();	
-		newImage.style = "width: " + zoomFactor + "%; height: auto;";
+		newImage.style = "width: " + imgzm.zoomFactor + "%; height: auto;";
 
 		imgzm.imageDiv.appendChild(newImage);
 	},
