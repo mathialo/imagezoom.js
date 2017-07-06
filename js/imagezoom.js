@@ -46,7 +46,7 @@ var imgzm = {
 		document.body.appendChild(imgzm.backgroundDiv);
 
 		imgzm.imageDiv = document.createElement("div");
-		imgzm.imageDiv.style = "display: flex; align-items: center; top: 0; bottom: 0; left: 0; right: 0; visibility: hidden; position: fixed; \
+		imgzm.imageDiv.style = "display: flex; align-items: center; justify-content: center; top: 0; bottom: 0; left: 0; right: 0; visibility: hidden; position: fixed; \
 			margin: auto; z-index: 1501;";
 		imgzm.imageDiv.id = "imgzm.image";
 		imgzm.imageDiv.addEventListener("click", imgzm.exitZoom);
