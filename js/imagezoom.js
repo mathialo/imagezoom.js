@@ -9,13 +9,15 @@ var imgzm = {
 	zoomImage: function(event) {
 		var image = event.target;
 		imgzm.backgroundDiv.style.visibility = "visible";
+		imgzm.imageDiv.style.visibility = "visible";
 		imgzm.imageDiv.appendChild(image.cloneNode());
 	},
 
 
 	exitZoom: function() {
-		imgzm.backgroundDiv.innerHTML = "";
+		imgzm.imageDiv.innerHTML = "";
 		imgzm.backgroundDiv.style.visibility = "hidden";
+		imgzm.imageDiv.style.visibility = "hidden";
 	},
 
 
@@ -44,8 +46,9 @@ var imgzm = {
 		document.body.appendChild(imgzm.backgroundDiv);
 
 		imgzm.imageDiv = document.createElement("div");
-		imgzm.imageDiv.style = "visibility: hidden; position: fixed; \
+		imgzm.imageDiv.style = "display: flex; align-items: center; top: 0; bottom: 0; left: 0; right: 0; visibility: hidden; position: fixed; \
 			margin: auto; z-index: 1501;";
+		imgzm.imageDiv.id = "imgzm.image";
 		imgzm.imageDiv.addEventListener("click", imgzm.exitZoom);
 
 		document.body.appendChild(imgzm.imageDiv);
