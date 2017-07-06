@@ -5,6 +5,7 @@
 var imgzm = {
 	backgroundDiv: {},
 	imageDiv: {},
+	zoomFactor: 50,
 
 	zoomImage: function(event) {
 		var image = event.target;
@@ -12,7 +13,7 @@ var imgzm = {
 		imgzm.imageDiv.style.visibility = "visible";
 
 		var newImage = image.cloneNode();	
-		newImage.style = "width: 50%; height: auto;";
+		newImage.style = "width: " + zoomFactor + "%; height: auto;";
 
 		imgzm.imageDiv.appendChild(newImage);
 	},
@@ -56,6 +57,11 @@ var imgzm = {
 		imgzm.imageDiv.addEventListener("click", imgzm.exitZoom);
 
 		document.body.appendChild(imgzm.imageDiv);
+	},
+
+
+	setZoomFactor: function(percentage) {
+		imgzm.zoomFactor = percentage;
 	}
 }
 
