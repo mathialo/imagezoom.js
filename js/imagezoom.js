@@ -6,15 +6,20 @@
 var imgzm = {
 	backgroundDiv: {},
 	imageDiv: {},
-	zoomFactor: 50,
+	zoomFactor: 75,
 
 	zoomImage: function(event) {
 		var image = event.target;
 		imgzm.backgroundDiv.style.visibility = "visible";
 		imgzm.imageDiv.style.visibility = "visible";
 
-		var newImage = image.cloneNode();	
-		newImage.style = "width: " + imgzm.zoomFactor + "%; height: auto;";
+		var newImage = image.cloneNode();
+
+		if (window.innerWidth < window.innerHeight) {
+			newImage.style = "width: " + imgzm.zoomFactor + "%; height: auto;";	
+		} else {
+			newImage.style = "height: " + imgzm.zoomFactor + "%; width: auto;";	
+		}
 
 		imgzm.imageDiv.appendChild(newImage);
 	},
