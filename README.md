@@ -27,19 +27,19 @@ Here is a small example of a site that loads imagezoom.js, and applies it to all
 ``` html
 <!DOCTYPE html>
 <html>
-	<head>
-		<script type="text/javascript" src="/path/to/js/imagezoom.js"></script>
-		<script type="text/javascript">
-			document.addEventListener("DOMContentLoaded", function(event) {
-				imgzm.applyToAllImgTags();
-			});
-		</script>
-	</head>
-	<body>
-		<h1>A bunch of images:</h1>
-		<img src="img1.jpg">
-		<img src="img2.jpg">
-		<img src="img3.jpg">
-	</body>
+    <head>
+        <script type="text/javascript" src="/path/to/js/imagezoom.js"></script>
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function(event) {
+                imgzm.applyToAllImgTags();
+            });
+        </script>
+    </head>
+    <body>
+        <h1>A bunch of images:</h1>
+        <img src="img1.jpg">
+        <img src="img2.jpg">
+        <img src="img3.jpg">
+    </body>
 </html>
 ```
