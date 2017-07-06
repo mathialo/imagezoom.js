@@ -10,7 +10,11 @@ var imgzm = {
 		var image = event.target;
 		imgzm.backgroundDiv.style.visibility = "visible";
 		imgzm.imageDiv.style.visibility = "visible";
-		imgzm.imageDiv.appendChild(image.cloneNode());
+
+		var newImage = image.cloneNode();	
+		newImage.style = "width: 50%; height: auto;";
+
+		imgzm.imageDiv.appendChild(newImage);
 	},
 
 
