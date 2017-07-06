@@ -1,3 +1,7 @@
+// imagezoom.js is a library for making images on a web page zoomable by clicking
+// at them. This work is licensed under the MIT license. 
+// (c) Mathias Lohne 2017
+
 var imgzm = {
 	backgroundDiv: {},
 	imageDiv: {},
