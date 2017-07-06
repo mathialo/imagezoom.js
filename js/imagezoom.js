@@ -48,4 +48,7 @@ var imgzm = {
 	}
 }
 
+document.addEventListener("DOMContentLoaded", function(event) {
+	imgzm.setup();
+});
 
