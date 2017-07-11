@@ -17,7 +17,7 @@ This is a quick description of the functions that are of intrest to the user:
 
  - `applyToImage(htmlDOM)` makes the given image clickable. It takes the DOM element of the image you want clickable as an argument
  - `applyToAllImgTags()` applies imagezoom to all images on the webpage.
- - `setZoomFactor(percentage)` sets the percentage of the screen's width to be occupied by the zoomed image. Expects an integer between 1 and 100.
+ - `setZoomFactor(percentage)` sets the percentage of the screen's width to be occupied by the zoomed image. Expects an integer between 1 and 100. Default is 75.
 
 All functions in imagezoom.js are prefixed with the namespace `imgzm`. 
 
