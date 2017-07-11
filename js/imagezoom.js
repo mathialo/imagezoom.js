@@ -34,6 +34,7 @@ var imgzm = {
 
 	applyToImage: function(htmlDOM) {
 		htmlDOM.addEventListener("click", imgzm.zoomImage);
+		htmlDOM.style.cursor = "pointer";
 	},
 
 
