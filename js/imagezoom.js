@@ -47,6 +47,15 @@ var imgzm = {
 	},
 
 
+	applyToClass: function(classname) {
+		var images = document.getElementsByClassName(classname);
+
+		for (var i = 0; i < images.length; i++) {
+			imgzm.applyToImage(images[i]);
+		}
+	},
+
+
 	setup: function() {
 		imgzm.backgroundDiv = document.createElement("div");
 		imgzm.backgroundDiv.style = "visibility: hidden; position: fixed; \
